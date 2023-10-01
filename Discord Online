@@ -1,0 +1,53 @@
+Discord Account Online 24/7
+
+Go to: https://replit.com/
+Click the Create 
+And Click 
+NODE.JS 
+And Click 
+Create 
+Click the index.js
+And paste this code 
+
+--------------------------------------------------
+
+const Eris = require("eris");
+const keep_alive = require('./keep_alive.js')
+
+// Replace TOKEN with your bot account's token
+const bot = new Eris(process.env.token);
+
+bot.on("error", (err) => {
+  console.error(err); // or your preferred logger
+});
+
+bot.connect(); // Get the bot to connect to Discord
+
+------------------------------------------------------
+
+Create another file 
+And paste this Name:
+
+keep_alive.js
+
+And paste this code:
+
+----------------------------------------------
+
+var http = require('http');
+
+http.createServer(function (req, res) {
+  res.write("I'm alive");
+  res.end();
+}).listen(8080);
+
+-----------------------------------------------
+
+And Now Go to Secrets
+And click Create 
+And Paste Your Token in Your Own Account 
+
+From 24/7 Online Go to:
+https://uptimerobot.com/
+
+And That's All
